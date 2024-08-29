@@ -6,7 +6,16 @@
     <style>
 
         body{
-            background-color: rgb(174, 246, 246);
+            background-color: rgb(120, 160, 180);
+            background-image: url("images/Car4.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(234, 227, 213, 0.8);
+            margin: 0;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
         }
 
         button{
@@ -26,13 +35,29 @@
             text-decoration: none;
             color: black;
         }
+        form {
+            background: rgba(237, 237, 237, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: rgb(8, 9, 9);
+        }
+        h2, h5 {
+            color: white;
+        }
 
     </style>
 </head>
 <body>
     
     <center><h2>Login Here</h2></center>
-    <center><h5>(Sample correct Credentials for testing : username-satyavanth, password-Satyavanth3#)</h5></center>
+    <center><h5>(Sample correct Credentials for testing : Username-Hari, Password-HVV1234$)</h5></center>
     <center><form name="loginForm" onsubmit="return validateForm()">
         <label >Username:</label>
         <input type="text" name="username" placeholder="Enter your user name" required><br><br>
@@ -50,7 +75,7 @@
         var x = document.forms["loginForm"]["username"].value;
         var y = document.forms["loginForm"]["password"].value;
 
-        if ((x == "satyavanth" && y == "Satyavanth3#") || (x == "satya" && y == "Satyaf23#")) {
+        if ((x == "Hari" && y == "HVV1234$") || (x == "Venkat" && y == "HVV9999$")) {
             alert("Login successful");
         }
 
